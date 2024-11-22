@@ -1,7 +1,13 @@
 import {FC} from "react";
-import {IDataShopCard} from "../utility/data.ts";
 import {NavLink} from "react-router-dom";
 
+export interface IDataShopCard {
+    img: string
+    id?: number
+    title: string
+    price: number
+    ballColor: string[]
+}
 
 const ShopCards: FC<IDataShopCard> = ({ballColor, img,id, price, title}) => {
 
